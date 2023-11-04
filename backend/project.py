@@ -37,25 +37,51 @@ count = 0
 #                     "calories": int(i[2]), "proteins": float(i[12])}
 
 #     count = count+1
-for i in data:
-    if count:
-        if int(y[1]) != 0:
-            if i[0] in bn:
+
+r=int(y[2])
+if(r==0):
+    for i in data:
+        if count:
+            if int(y[1]) != 0:
+                if i[0] in bn:
+                    if float(i[2]) >= 250 and i[12] != 'NA':
+                        food_data["protein_sources"][i[1]] = {
+                            "calories": int(i[2]), "proteins": float(i[12])}
+                    if float(i[2]) <= 250 and i[12] != 'NA':
+                        food_data["vegetables"][i[1]] = {
+                            "calories": int(i[2]), "proteins": float(i[12])}
+            else:
                 if float(i[2]) >= 250 and i[12] != 'NA':
                     food_data["protein_sources"][i[1]] = {
                         "calories": int(i[2]), "proteins": float(i[12])}
                 if float(i[2]) <= 250 and i[12] != 'NA':
                     food_data["vegetables"][i[1]] = {
                         "calories": int(i[2]), "proteins": float(i[12])}
-        else:
-            if float(i[2]) >= 250 and i[12] != 'NA':
-                food_data["protein_sources"][i[1]] = {
-                    "calories": int(i[2]), "proteins": float(i[12])}
-            if float(i[2]) <= 250 and i[12] != 'NA':
-                food_data["vegetables"][i[1]] = {
-                    "calories": int(i[2]), "proteins": float(i[12])}
-    count = count+1
+        count = count+1
+else:
+    for i in data:
+        if count:
+            if int(y[1]) != 0:
+                if i[0] in bn:
+                    if float(i[2]) >= 250 and i[12] != 'NA' and r==int(i[17]):
+                        food_data["protein_sources"][i[1]] = {
+                            "calories": int(i[2]), "proteins": float(i[12])}
+                    if float(i[2]) <= 250 and i[12] != 'NA' and r==int(i[17]):
+                        food_data["vegetables"][i[1]] = {
+                            "calories": int(i[2]), "proteins": float(i[12])}
+            else:
+                if float(i[2]) >= 250 and i[12] != 'NA' and r==int(i[17]):
+                    food_data["protein_sources"][i[1]] = {
+                        "calories": int(i[2]), "proteins": float(i[12])}
+                if float(i[2]) <= 250 and i[12] != 'NA'and r==int(i[17]):
+                    food_data["vegetables"][i[1]] = {
+                        "calories": int(i[2]), "proteins": float(i[12])}
+        count = count+1
+    
+
+
 calorie_limit = int(y[0])
+
 pulp.LpSolverDefault.msg = 0
 
 
@@ -126,3 +152,4 @@ print(end="&")
 print("Total Protein Intake:", pulp.value(prob.objective), end="")
 
 sys.stdout.flush()
+
