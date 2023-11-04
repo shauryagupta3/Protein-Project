@@ -1,9 +1,23 @@
 var MaxCal = "";
 var brands = "";
+var pref = "";
 const submit = document.getElementById("submit");
+const tbl = document.getElementById("dataTable");
 submit.addEventListener("click", function async(e) {
   e.preventDefault();
-  MaxCal = document.getElementById("noOfMaxCalories").value;
+  MaxCal = document.getElementById("range_cal").value;
+  var prefBtn = document.getElementsByName("berries");
+  for (var i = 0; i < prefBtn.length; i++) {
+    if (prefBtn[0].checked) {
+      brands = "0";
+      break;
+    }
+    if (prefBtn[i].checked) {
+      brands += prefBtn[i].value;
+    }
+  }
+  console.log(brands);
+  console.log(pref);
   console.log(isNaN(MaxCal));
   if (!isNaN(MaxCal)) {
     dataPY();
@@ -15,12 +29,14 @@ submit.addEventListener("click", function async(e) {
 
 async function dataPY() {
   const response = await fetch(
-    `http://localhost:3001/run-python-script?maxCalories=${MaxCal}*12`
+    `http://localhost:3001/run-python-script?maxCalories=${MaxCal}*${brands}`
   );
   const data = await response.json();
 
   if (response.ok) {
-    const tbl = document.createElement("table");
+    while (tbl.rows.length > 0) {
+      tbl.deleteRow(0);
+    }
     const tblBody = document.createElement("tbody");
     tblBody.innerHTML =
       "<tr> <th>Brand</th> <th>Name</th> <th>Calories</th> <th>Fats</th> <th>Carbohydrates</th> <th>Sugar</th> <th>Protiens</th> <th>Quantity</th> <th>Total Protiens</th> </tr>";
@@ -58,7 +74,9 @@ async function dataPY() {
       tblBody.appendChild(row);
     }
     tbl.appendChild(tblBody);
-    document.body.appendChild(tblBody);
+    MaxCal = "";
+    brands = "";
+    pref = "";
   } else {
     console.log(data.error);
   }

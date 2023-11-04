@@ -5,15 +5,15 @@ Mcdonalds,Double Bacon Smokehouse Burger,1130,600,67,27,3,220,1920,63,3,18,70,10
 Mcdonalds,Grilled Bacon Smokehouse Chicken Sandwich,750,280,31,10,0.5,155,1940,62,2,18,55,6,25,20,Other
 Mcdonalds,Crispy Bacon Smokehouse Chicken Sandwich,920,410,45,12,0.5,120,1980,81,4,18,46,6,20,20,Other
 Mcdonalds,Big Mac,540,250,28,10,1,80,950,46,3,9,25,10,2,15,Other
-Mcdonalds,Cheeseburger,300,100,12,5,0.5,40,680,33,2,7,15,10,2,10,Other
+Mcdonalds,CheeseBurger,300,100,12,5,0.5,40,680,33,2,7,15,10,2,10,Other
 Mcdonalds,Classic Chicken Sandwich,510,210,24,4,0,65,1040,49,3,6,25,0,4,2,Other
-Mcdonalds,Double Cheeseburger,430,190,21,11,1,85,1040,35,2,7,25,20,4,15,Other
+Mcdonalds,Double CheeseBurger,430,190,21,11,1,85,1040,35,2,7,25,20,4,15,Other
 Mcdonalds,Double Quarter Pounder® with Cheese,770,400,45,21,2.5,175,1290,42,3,10,51,20,6,20,Other
 Mcdonalds,Filet-O-Fish®,380,170,18,4,0,40,640,38,2,5,15,2,0,15,Other
 Mcdonalds,Garlic White Cheddar Burger,620,300,34,13,1.5,95,790,48,3,11,32,10,10,35,Other
 Mcdonalds,Grilled Garlic White Cheddar Chicken Sandwich,530,180,20,7,0,125,1150,48,3,11,42,10,20,35,Other
 Mcdonalds,Crispy Garlic White Cheddar Chicken Sandwich,700,300,34,9,0,85,1190,67,5,11,33,10,15,35,Other
-Mcdonalds,Hamburger,250,70,8,3,0,30,480,31,2,6,13,2,2,4,Other
+Mcdonalds,HamBurger,250,70,8,3,0,30,480,31,2,6,13,2,2,4,Other
 Mcdonalds,Lobster Roll,290,50,5,1.5,0,65,630,35,2,3,24,4,6,15,Other
 Mcdonalds,Maple Bacon Dijon 1/4 lb Burger,640,330,36,14,1.5,110,1260,40,3,10,37,6,15,15,Other
 Mcdonalds,Grilled Maple Bacon Dijon Chicken Sandwich,580,190,21,8,0,135,1890,50,3,14,48,4,30,30,Other
@@ -107,8 +107,8 @@ Sonic,Veggie Burger With Mustard,450,130,14,4,0,10,1350,64,5,8,15,6,8,27,Other
 Sonic,Veggie Burger W/ Mustard,450,130,14,4,0,10,1300,64,5,8,15,6,8,25,Other
 Sonic,Grilled Asiago Caesar Chicken Club Sandwich,610,270,30,7,0,110,1570,44,3,8,40,11,20,16,Other
 Sonic,Crispy Asiago Caesar Chicken Club Sandwich,680,350,39,9,0,80,1120,53,4,7,31,11,7,16,Other
-Sonic,Grilled Chicken Sandwich,430,180,20,4,0,80,940,33,2,6,28,6,8,10,Other
-Sonic,Crispy Chicken Sandwich,570,300,33,5,0,45,1060,47,4,6,23,6,8,10,Other
+Sonic,Grilled chicken sandwich,430,180,20,4,0,80,940,33,2,6,28,6,8,10,Other
+Sonic,Crispy chicken sandwich,570,300,33,5,0,45,1060,47,4,6,23,6,8,10,Other
 Sonic,Chicken Strip Sandwich,450,220,24,4,0,35,740,43,1,4,19,0,0,4,Other
 Sonic,3 Piece Crispy Chicken Tender Dinner,280,130,14,2.5,0,0,800,16,0,0,22,NA,NA,NA,Other
 Sonic,5 Piece Crispy Chicken Tender Dinner,470,220,24,4.5,0,0,1340,26,0,0,37,NA,NA,NA,Other
@@ -126,14 +126,14 @@ Sonic,3 Piece Super Crunch Chicken Strips,330,140,16,3,0,55,670,25,2,0,22,1,2,1,
 Sonic,4 Piece Super Crunch Chicken Strips,440,190,21,4,0,70,900,34,2,1,29,1,2,1,Other
 Sonic,5 Piece Super Crunch Chicken Strips,550,240,26,5,0,90,1120,42,3,1,36,1,3,2,Other
 Sonic,Traditional Ultimate Chicken Sandwich,730,350,39,8,0,90,1540,62,3,11,32,4,2,15,Other
-Sonic,Ultimate Chicken Club,100,580,64,15,0.5,100,2070,65,4,12,39,15,8,30,Other
+Sonic,Ultimate Chicken Club,200,580,64,15,0.5,100,2070,65,4,12,39,15,8,30,Other
 Sonic,"All Beef All-american Style Dog – 6""",370,160,18,7,0,40,1180,40,1,15,12,2,4,8,Other
 Sonic,"All Beef Chicago Dog – 6""",430,180,20,7,0,40,2310,49,1,17,14,4,6,10,Other
 Sonic,"All Beef Chili Cheese Coney – 6""",410,230,26,11,0,65,1140,30,2,4,17,10,2,20,Other
 Sonic,"All Beef New York Dog – 6""",340,170,19,7,0,40,1250,30,3,4,13,2,10,8,Other
 Sonic,"All Beef Regular Hot Dog – 6""",320,160,18,7,0,40,870,27,1,3,11,0,2,8,Other
 Sonic,Cheesy Bacon Pretzel Dog - 6 In.,500,240,26,10,0,50,1410,46,2,7,15,1,3,8,Other
-Sonic,Corn Dog,210,100,11,4,0,20,530,23,2,4,6,0,0,4,Other
+Sonic,Corn dog,210,100,11,4,0,20,530,23,2,4,6,0,0,4,Other
 Sonic,Footlong Quarter Pound Coney,830,490,54,22,1,85,1940,54,3,9,30,15,4,30,Other
 Sonic,The Original Pretzel Dog,320,160,18,7,0,35,910,27,1,2,11,0,0,4,Other
 Arbys,Arby's Melt,330,100,11,4,0,30,920,40,2,5,18,2,0,8,Other
@@ -247,8 +247,8 @@ Burger King,Chicken Nuggets (10pc),470,260,29,5,0,50,890,34,5,0,21,NA,NA,NA,Othe
 Burger King,Chicken Parmesan Sandwich,570,225,25,8,0,70,1340,57,NA,9,32,NA,NA,NA,Other
 Burger King,Crispy Buffalo Chicken Melt,580,252,28,8,0.5,70,2310,56,NA,8,30,NA,NA,NA,Other
 Burger King,Crispy Chicken Jr.,430,250,28,4.5,0,30,760,34,2,4,12,NA,NA,NA,Other
-Burger King,Crispy Chicken Sandwich,670,370,41,7,0.5,60,1070,54,2,7,23,NA,NA,NA,Other
-Burger King,Grilled Chicken Sandwich,470,170,19,3.5,0,85,850,39,2,6,37,NA,NA,NA,Other
+Burger King,crispy Chicken Sandwich,670,370,41,7,0.5,60,1070,54,2,7,23,NA,NA,NA,Other
+Burger King,grilled Chicken Sandwich,470,170,19,3.5,0,85,850,39,2,6,37,NA,NA,NA,Other
 Burger King,Grilled Chili Cheese Dog,330,170,19,8,1,40,980,28,2,5,14,NA,NA,NA,Other
 Burger King,Grilled Hot Dog,310,140,16,6,1,30,960,32,2,10,11,NA,NA,NA,Other
 Burger King,Jalapeno Chicken Fries,300,160,18,3,0,40,950,19,1,1,15,NA,NA,NA,Other
@@ -413,7 +413,7 @@ Taco Bell,Cantina Power Burrito - Chicken,760,240,27,6,0,60,1960,96,12,7,32,NA,N
 Taco Bell,Cantina Power Burrito - Steak,780,250,28,7,0,50,1900,98,13,7,33,NA,NA,NA,Other
 Taco Bell,Cantina Power Burrito - Veggie,740,230,26,5,0,10,1750,107,17,8,20,NA,NA,NA,Other
 Taco Bell,Cheesy Bean and Rice Burrito,420,160,17,3.5,0,0,930,55,6,4,11,NA,NA,NA,Other
-Taco Bell,Chili Cheese Burrito,380,150,17,8,1,35,930,41,5,2,16,NA,NA,NA,Other
+Taco Bell,Chili cheese burrito,380,150,17,8,1,35,930,41,5,2,16,NA,NA,NA,Other
 Taco Bell,Chicken Crunchy Cheesy Core Burrito,610,210,24,9,0,55,1510,74,5,5,25,10,4,35,Other
 Taco Bell,Steak Crunchy Cheesy Core Burrito,610,220,24,9,0,50,1520,75,5,5,25,10,4,40,Other
 Taco Bell,Beef Crunchy Cheesy Core Burrito,630,240,26,10,0.5,45,1530,76,7,5,22,15,4,35,Other
@@ -496,7 +496,6 @@ Taco Bell,Chipotle Crispy Chicken Griller,290,170,18,3,0,25,640,22,1,1,9,NA,NA,N
 Taco Bell,Crispy Chicken Quesadilla,650,340,37,13,0.5,75,1480,51,5,3,26,10,2,45,Other
 Taco Bell,Crunchwrap Supreme®,540,190,21,6,0,30,1110,71,7,7,16,NA,NA,NA,Other
 Taco Bell,Double Tostada,270,100,11,4,0,15,650,32,8,2,12,NA,NA,NA,Other
-Taco Bell,Express Taco Salad w/ Chips,580,260,29,9,1,60,1270,59,8,7,23,NA,NA,NA,Other
 Taco Bell,Loaded Potato Griller,470,200,22,6,0,25,1120,55,4,5,13,NA,NA,NA,Other
 Taco Bell,Mexican Pizza,540,270,31,8,1,40,860,47,7,2,20,NA,NA,NA,Other
 Taco Bell,MexiMelt®,270,130,14,7,1,40,740,21,3,2,14,NA,NA,NA,Other

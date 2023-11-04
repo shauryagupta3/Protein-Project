@@ -26,16 +26,34 @@ bn = []
 for i in y[1]:
     bn.append(brand_names[int(i)])
 count = 0
+# for i in data:
+#     if count:
+#         if i[0] in bn:
+#             if float(i[2]) >= 450 and i[12] != 'NA':
+#                 food_data["protein_sources"][i[1]] = {
+#                     "calories": int(i[2]), "proteins": float(i[12])}
+#             if float(i[2]) <= 450 and i[12] != 'NA':
+#                 food_data["vegetables"][i[1]] = {
+#                     "calories": int(i[2]), "proteins": float(i[12])}
+
+#     count = count+1
 for i in data:
     if count:
-        if i[0] in bn:
-            if float(i[2]) >= 450 and i[12] != 'NA':
+        if int(y[1]) != 0:
+            if i[0] in bn:
+                if float(i[2]) >= 250 and i[12] != 'NA':
+                    food_data["protein_sources"][i[1]] = {
+                        "calories": int(i[2]), "proteins": float(i[12])}
+                if float(i[2]) <= 250 and i[12] != 'NA':
+                    food_data["vegetables"][i[1]] = {
+                        "calories": int(i[2]), "proteins": float(i[12])}
+        else:
+            if float(i[2]) >= 250 and i[12] != 'NA':
                 food_data["protein_sources"][i[1]] = {
                     "calories": int(i[2]), "proteins": float(i[12])}
-            if float(i[2]) <= 450 and i[12] != 'NA':
+            if float(i[2]) <= 250 and i[12] != 'NA':
                 food_data["vegetables"][i[1]] = {
                     "calories": int(i[2]), "proteins": float(i[12])}
-
     count = count+1
 calorie_limit = int(y[0])
 pulp.LpSolverDefault.msg = 0
@@ -105,6 +123,6 @@ for i in data2:
             print(str(j[2]), end="+")
 
 print(end="&")
-print("Total Protein Intake:", pulp.value(prob.objective),end="")
+print("Total Protein Intake:", pulp.value(prob.objective), end="")
 
 sys.stdout.flush()
