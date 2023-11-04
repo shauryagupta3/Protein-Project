@@ -7,13 +7,13 @@ file = open("fastfood.csv", 'r')
 data = csv.reader(file)
 food_data = {
     "protein_sources": {
-        # "food_item_1": {"calories": 500, "proteins": 20},
-        # "food_item_2": {"calories": 600, "proteins": 25},
+        "food_item_1": {"calories": 500, "proteins": 20},
+        "food_item_2": {"calories": 600, "proteins": 25},
         # Add more protein sources and their attributes as needed
     },
     "vegetables": {
-        # "food_item_3": {"calories": 500, "proteins": 10},
-        # "food_item_4": {"calories": 400, "proteins": 3},
+        "food_item_3": {"calories": 500, "proteins": 10},
+        "food_item_4": {"calories": 400, "proteins": 3},
         # Add more vegetables and their attributes as needed
     }
 }
@@ -83,28 +83,17 @@ file2 = open("fastfood.csv", 'r')
 data2 = csv.reader(file2)
 
 # Output the results
-# print("Status:", pulp.LpStatus[prob.status])
-# print("Optimal Diet:")
+print("Status:", pulp.LpStatus[prob.status])
+print("Optimal Diet:")
 optimal_diet = []
 for category in food_data:
     for food in food_data[category]:
         if food_vars[category][food].value() > 0:
-            # print(f"{food}: {food_vars[category][food].value()} qty")
+            print(f"{food}: {food_vars[category][food].value()} qty")
             optimal_diet.append(
                 (category, food, food_vars[category][food].value()))
 
 
-# print(optimal_diet)
-str2 = []
-for i in data2:
-    for j in optimal_diet:
-        if j[1] == i[1]:
-            print(end="&")
-            for m in i:
-                print(m, end="+")
-            print(str(j[2]), end="+")
-
-print(end="&")
-print("Total Protein Intake:", pulp.value(prob.objective),end="")
+print("Total Protein Intake:", pulp.value(prob.objective))
 
 sys.stdout.flush()

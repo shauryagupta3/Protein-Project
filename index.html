@@ -7,9 +7,23 @@
   </head>
   <body>
     <label for="Calories">Enter number of calories</label>
-    <input type="text" id="noOfMaxCalories">
+    <input type="text" id="noOfMaxCalories" />
+    <fieldset>
+      <legend>Select your prefrence :</legend>
+
+      <input type="radio" id="huey" name="drone" value="huey" checked />
+      <label for="huey">Any</label>
+
+      <input type="radio" id="dewey" name="drone" value="dewey" />
+      <label for="dewey">Veg</label>
+
+      <input type="radio" id="louie" name="drone" value="louie" />
+      <label for="louie">Non-veg</label>
+    </fieldset>
     <button type="submit" id="submit">submit</button>
+    <div id="data">
+      <ul id="list"></ul>
+    </div>
     <script type="module" src="app.js"></script>
-    <script type="module" src="data.js"></script>
   </body>
 </html>

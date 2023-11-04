@@ -15,7 +15,7 @@ app.get("/", (req, res) => res.send("<h1>Shaurya</h1>"));
 app.get("/run-python-script", (req, res) => {
   const maxCalories = req.query.maxCalories;
 
-  if (!maxCalories || isNaN(maxCalories) || maxCalories === "0") {
+  if (!maxCalories || maxCalories === "0") {
     res
       .status(400)
       .json({ error: "Please provide a valid number of calories." });
