@@ -3,8 +3,8 @@ import sys
 import json
 import ast
 import pulp
-file=open("fastfood.csv", 'r')
-data=csv.reader(file)
+file = open("fastfood.csv", 'r')
+data = csv.reader(file)
 food_data = {
     "protein_sources": {
         "food_item_1": {"calories": 500, "proteins": 20},
@@ -16,22 +16,22 @@ food_data = {
         "food_item_4": {"calories": 400, "proteins": 3},
         # Add more vegetables and their attributes as needed
     }
-    }
+}
 
-count=0
+count = 0
 for i in data:
     if count:
-        if float(i[2])>=450 and i[12]!='NA':
-            food_data["protein_sources"][i[1]]={"calories":int(i[2]), "proteins":float(i[12])}
-        if float(i[2])<=450 and i[12]!='NA':
-            food_data["vegetables"][i[1]]={"calories":int(i[2]), "proteins":float(i[12])}
+        if float(i[2]) >= 450 and i[12] != 'NA':
+            food_data["protein_sources"][i[1]] = {
+                "calories": int(i[2]), "proteins": float(i[12])}
+        if float(i[2]) <= 450 and i[12] != 'NA':
+            food_data["vegetables"][i[1]] = {
+                "calories": int(i[2]), "proteins": float(i[12])}
 
-    count=count+1
-inputs=sys.argv[1]
+    count = count+1
+inputs = sys.argv[1]
 calorie_limit = int(inputs)
 pulp.LpSolverDefault.msg = 0
-
-
 
 
 # Create a LP Maximization problem
@@ -53,17 +53,21 @@ penalty_factor = 1000  # You can adjust the penalty factor as needed
 # Modify the objective function to include penalty terms
 for category in food_data:
     for food in food_data[category]:
-        prob += food_vars[category][food] - penalty_vars[category][food] * penalty_factor <= 10  # Apply penalty for large quantities
+        prob += food_vars[category][food] - penalty_vars[category][food] * \
+            penalty_factor <= 10  # Apply penalty for large quantities
         prob += food_vars[category][food] >= 0
 
-prob += pulp.lpSum((food_data[category][food]["proteins"] * food_vars[category][food]) for category in food_data for food in food_data[category])
+prob += pulp.lpSum((food_data[category][food]["proteins"] * food_vars[category][food])
+                   for category in food_data for food in food_data[category])
 
 # Constraint: total calories should not exceed the calorie limit
-prob += pulp.lpSum(food_data[category][food]["calories"] * food_vars[category][food] for category in food_data for food in food_data[category]) <= calorie_limit
+prob += pulp.lpSum(food_data[category][food]["calories"] * food_vars[category][food]
+                   for category in food_data for food in food_data[category]) <= calorie_limit
 
 # Constraint: select at least one food item from each category
 for category in food_data:
-    prob += pulp.lpSum(food_vars[category][food] for food in food_data[category]) >= 1
+    prob += pulp.lpSum(food_vars[category][food]
+                       for food in food_data[category]) >= 1
 
 # Solve the problem
 prob.solve()
@@ -76,7 +80,8 @@ for category in food_data:
     for food in food_data[category]:
         if food_vars[category][food].value() > 0:
             print(f"{food}: {food_vars[category][food].value()} grams")
-            optimal_diet.append((category, food, food_vars[category][food].value()))
+            optimal_diet.append(
+                (category, food, food_vars[category][food].value()))
 
 print("Total Protein Intake:", pulp.value(prob.objective))
 
