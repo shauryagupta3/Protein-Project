@@ -1,8 +1,25 @@
-const spawner = require("child_process").spawn;
-const data_to_pass_in = "800";
-console.log(data_to_pass_in);
-const python_process = spawner("python", ["./project.py", data_to_pass_in]);
-
-python_process.stdout.on("data", (data) => {
-  console.log(data.toString());
+var MaxCal = "";
+const submit = document.getElementById("submit");
+submit.addEventListener("click", function async(e) {
+  e.preventDefault();
+  MaxCal = document.getElementById("noOfMaxCalories").value;
+  console.log(isNaN(MaxCal));
+  if (!isNaN(MaxCal)) {
+    console.log(typeof MaxCal);
+    dataPY();
+  } else {
+    MaxCal = "";
+    alert("Please enter valid Number");
+  }
 });
+
+async function dataPY() {
+  const response = await fetch(`/run-python-script?maxCalories=${MaxCal}`);
+  const data = await response.json();
+
+  if (response.ok) {
+    console.log(data.result);
+  } else {
+    console.log(data.error);
+  }
+}
