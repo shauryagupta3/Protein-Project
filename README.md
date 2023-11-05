@@ -1,7 +1,6 @@
 # The Protein Project
 
 The Protein Project is a powerful application designed to help you discover the most optimal combination of foods that maximize your protein intake while adhering to your specified calorie limit.
-[PPT](https://www.canva.com/design/DAFzQwz-nDw/BlKBGnovOYUjK-db0aDJNQ/edit?utm_content=DAFzQwz-nDw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## Problem
 In our fast-paced, food-abundant world, where fast food and various culinary options are readily available, tracking our health and achieving specific dietary objectives can be increasingly challenging. How can we effectively manage our nutritional goals, such as optimizing protein intake while staying within our daily calorie limits, given the wide variety of food choices and the fast-evolving nature of our dietary environment?
@@ -10,6 +9,7 @@ In our fast-paced, food-abundant world, where fast food and various culinary opt
 
 We've harnessed the potential of a comprehensive fast-food dataset from the USA, which we've supplemented with manually added entries to enhance the variety and accuracy of our recommendations. This rich dataset forms the foundation of our application, allowing you to make informed dietary choices.
 
+![alt text](https://github.com/shauryagupta3/Protein-Project/blob/main/img/screenshot.jpeg?raw=true)
 ## How it Works
 
 1. **Objective Function**: The core of The Protein Project is its ability to generate personalized recommendations based on your maximum calorie limit. We use the power of mathematical optimization to create an objective function that seeks to maximize protein intake while adhering to your calorie constraints.
@@ -17,6 +17,17 @@ We've harnessed the potential of a comprehensive fast-food dataset from the USA,
 2. **Frontend**: The frontend of the application is built using JavaScript, providing a user-friendly interface for entering your calorie limit and receiving dietary recommendations.
 
 3. **Backend Server**: The communication between the JavaScript frontend and the Python script responsible for optimizing your diet is facilitated by our backend server. This server, powered by Node.js, plays a crucial role in passing user inputs and delivering the optimized results.
+
+## Presentation
+<a href="https://www.canva.com/design/DAFzQwz-nDw/BlKBGnovOYUjK-db0aDJNQ/edit?utm_content=DAFzQwz-nDw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_parent" >**Project Presentation**</a>
+
+## Team Details
+1. **Team Name**: Team S.A.S
+2. **Team ID**: 6151
+3. **Team Members**: <br>- Ankit Chawla<br>
+                     - Sahaj Khurana<br>
+                     - Shaurya Gupta
+4. **Project Name**: The Protein Project 
 
 ## Installation Instructions
 
