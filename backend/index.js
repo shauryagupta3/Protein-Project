@@ -10,7 +10,7 @@ const PORT = 3001; // You can change this to any desired port
 
 // app.use(express.static("public"));
 
-app.get("/", (req, res) => res.send("<h1>Shaurya</h1>"));
+app.get("/api", (req, res) => res.send("<h1>Shaurya</h1>"));
 
 app.get("/run-python-script", (req, res) => {
   const maxCalories = req.query.maxCalories;
