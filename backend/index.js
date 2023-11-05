@@ -1,6 +1,7 @@
 const cors = require("cors");
 const express = require("express");
 var morgan = require("morgan");
+var nodemon = require("nodemon");
 const app = express();
 app.use(cors());
 app.use(express.json());
