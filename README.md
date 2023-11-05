@@ -10,6 +10,7 @@ In our fast-paced, food-abundant world, where fast food and various culinary opt
 
 We've harnessed the potential of a comprehensive fast-food dataset from the USA, which we've supplemented with manually added entries to enhance the variety and accuracy of our recommendations. This rich dataset forms the foundation of our application, allowing you to make informed dietary choices.
 
+![alt text](https://github.com/shauryagupta3/Protein-Project/blob/main/img/screenshot.jpeg?raw=true)
 ## How it Works
 
 1. **Objective Function**: The core of The Protein Project is its ability to generate personalized recommendations based on your maximum calorie limit. We use the power of mathematical optimization to create an objective function that seeks to maximize protein intake while adhering to your calorie constraints.
