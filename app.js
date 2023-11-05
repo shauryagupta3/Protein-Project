@@ -19,7 +19,6 @@ submit.addEventListener("click", function async(e) {
   }
   var radioButtons = document.getElementsByName("pref");
 
-
   for (var i = 0; i < radioButtons.length; i++) {
     if (radioButtons[i].checked) {
       pref = radioButtons[i].value;
@@ -48,7 +47,7 @@ async function dataPY() {
     }
     const tblBody = document.createElement("tbody");
     tblBody.innerHTML =
-      "<tr> <th>Brand</th> <th>Name</th> <th>Calories</th> <th>Fats</th> <th>Carbohydrates</th> <th>Sugar</th> <th>Protiens</th> <th>Quantity</th> <th>Total Protiens</th> </tr>";
+      "<tr> <th>Brand</th> <th>Name</th> <th>Calories</th> <th>Fats</th> <th>Carbohydrates</th> <th>Sugar</th> <th>Proteins</th> <th>Quantity</th> <th>Total Protiens</th> </tr>";
     console.log(data.result);
     const resData = data.result;
     var splitArr = [];
