@@ -19,7 +19,7 @@ We've harnessed the potential of a comprehensive fast-food dataset from the USA,
 3. **Backend Server**: The communication between the JavaScript frontend and the Python script responsible for optimizing your diet is facilitated by our backend server. This server, powered by Node.js, plays a crucial role in passing user inputs and delivering the optimized results.
 
 ## Presentation
-<a href="https://www.canva.com/design/DAFzQwz-nDw/BlKBGnovOYUjK-db0aDJNQ/edit?utm_content=DAFzQwz-nDw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_parent" >**PowerPoint Presentation**</a>
+**[PowerPoint Presentation]**(https://www.canva.com/design/DAFzQwz-nDw/BlKBGnovOYUjK-db0aDJNQ/edit?utm_content=DAFzQwz-nDw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton){:target="_blank"}
 
 ## Team Details
 1. **Team Name**: Team S.A.S
