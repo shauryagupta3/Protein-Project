@@ -37,6 +37,9 @@ To run The Protein Project on your local machine, follow these steps:
    ```bash
    npm install node nodemon morgan cors express
    ```
+   ```bash
+   pip install pulp
+   ```
 
 5. **Start the Server**: Launch the Node.js server:
 
