@@ -64,7 +64,7 @@ To run The Protein Project on your local machine, follow these steps:
 
 The server is now running, waiting to serve the frontend.
 
-6. **Launch the Application**: Open the `index.html` file in your web browser. The frontend will automatically connect to the backend server.
+6. **Launch the Application**: Open the `index.html` file in your web browser with **Live Server**. The frontend will automatically connect to the backend server.
 
 7. **Input Your Preferences**: Provide your maximum calorie limit in the user-friendly interface and run the application.
 
