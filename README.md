@@ -1,6 +1,10 @@
 # The Protein Project
 
 The Protein Project is a powerful application designed to help you discover the most optimal combination of foods that maximize your protein intake while adhering to your specified calorie limit.
+[PPT](https://www.canva.com/design/DAFzQwz-nDw/BlKBGnovOYUjK-db0aDJNQ/edit?utm_content=DAFzQwz-nDw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+## Problem
+In our fast-paced, food-abundant world, where fast food and various culinary options are readily available, tracking our health and achieving specific dietary objectives can be increasingly challenging. How can we effectively manage our nutritional goals, such as optimizing protein intake while staying within our daily calorie limits, given the wide variety of food choices and the fast-evolving nature of our dietary environment?
 
 ## Overview
 
@@ -36,6 +40,9 @@ To run The Protein Project on your local machine, follow these steps:
 
    ```bash
    npm install node nodemon morgan cors express
+   ```
+   ```bash
+   pip install pulp
    ```
 
 5. **Start the Server**: Launch the Node.js server:
