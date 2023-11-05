@@ -21,6 +21,13 @@ We've harnessed the potential of a comprehensive fast-food dataset from the USA,
 ## Presentation
 <a href="https://www.canva.com/design/DAFzQwz-nDw/BlKBGnovOYUjK-db0aDJNQ/edit?utm_content=DAFzQwz-nDw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_parent" >**Project Presentation**</a>
 
+## Video Demonstration of The Application
+
+
+https://github.com/shauryagupta3/Protein-Project/assets/125081669/79c550a0-4ab0-4fb3-9f0a-5f5b57c3caa6
+
+
+
 ## Team Details
 1. **Team Name**: Team S.A.S
 2. **Team ID**: 6151
