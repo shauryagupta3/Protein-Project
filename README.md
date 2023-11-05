@@ -26,10 +26,6 @@ To run The Protein Project on your local machine, follow these steps:
    git clone https://github.com/yourusername/TheProteinProject.git
    ```
 
-Certainly, I'll add the installation instructions for the required dependencies to the provided README. Here's the enhanced and elaborated README:
-
-```markdown
-
 3. **Navigate to the Backend Directory**: Move into the `backend` directory:
 
    ```bash
