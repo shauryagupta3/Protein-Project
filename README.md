@@ -24,7 +24,7 @@ We've harnessed the potential of a comprehensive fast-food dataset from the USA,
 ## Team Details
 1. **Team Name**: Team S.A.S
 2. **Team ID**: 6151
-3. **Team Members**: - Ankit Chawla<br>
+3. **Team Members**: <br>- Ankit Chawla<br>
                      - Sahaj Khurana<br>
                      - Shaurya Gupta
 4. **Project Name**: The Protein Project 
