@@ -26,16 +26,20 @@ To run The Protein Project on your local machine, follow these steps:
    git clone https://github.com/yourusername/TheProteinProject.git
    ```
 
+Certainly, I'll add the installation instructions for the required dependencies to the provided README. Here's the enhanced and elaborated README:
+
+```markdown
+
 3. **Navigate to the Backend Directory**: Move into the `backend` directory:
 
    ```bash
    cd TheProteinProject/backend
    ```
 
-4. **Install Dependencies**: Install the necessary dependencies for the backend:
+4. **Install Dependencies**: Install the necessary dependencies for the backend. In this case, you'll need Node.js, npm, and a few packages to run the server:
 
    ```bash
-   npm install
+   npm install node nodemon morgan cors express
    ```
 
 5. **Start the Server**: Launch the Node.js server:
